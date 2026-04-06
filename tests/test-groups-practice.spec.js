@@ -3,11 +3,11 @@ import {test} from "@playwright/test"
 test.describe("Practice.cydeo", () => {
 
     test.beforeEach(async ({page}) => {
-        await page.goto("https://practice.cydeo.com/")
+        await page.goto("https://the-internet-5chk.onrender.com/");
     });
 
     test.afterEach(async ({page}) => {
-        await page.waitForTimeout(3000);
+        //await page.waitForTimeout(3000);
     });
 
     test("title of page", async ({ page }) => {
